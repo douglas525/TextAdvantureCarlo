@@ -62,13 +62,13 @@ new GameOption("Drink Even More Coffee", () => tge.setScene(CoffeeDeath))
 });
 
 let CoffeeDeath = new Scene({
-    text: "Your heart beats faster and faster... Gameover, had no one told you to not drink a lot of coffee. (HeartAttack)",
+    text: "Your heart beats faster and faster... Game over, had no one told you to not drink a lot of coffee. (HeartAttack)",
     image: "Images/Screenshot 2024-11-14 094047.png",
     options: [new GameOption("Start Over", () => Start())],
 });
 
 let Outside = new Scene({
-    text: "You breath a sigh of relief as you exit the building, ahead you see a Bus stop, you could also call for a cab. Else walking would also be a good stratigey as you know there is a train-station nearby.",
+    text: "You breathe a sigh of relief as you exit the building, ahead you see a bus stop, you could also call for a cab. Else walking would also be a good strategy as you know there is a train-station nearby.",
     image: "Images/abbey-road-london.webp",
     options: [new GameOption("Wait at the bus stop", () => tge.setScene(BusStop)),
         new GameOption("Call for a Taxi", () => tge.setScene(TaxiCabInside)),
@@ -105,12 +105,12 @@ let TaxiCabInside = new Scene({
     })]
 });
 let TaxiGameOver = new Scene({
-    text: "Oh... you dont have enough money. Well, thats a gameover. And a grounding when you get home.",
+    text: "Oh... you dont have enough money. Well, thats a game over. And a grounding when you get home.",
     image: "Images/pixil-frame-0 (3).png",
     options: [new GameOption("Start Over", () => Start())]
 });
 let Somewhere = new Scene({
-    text: "You have abolsutly no idea where you are...",
+    text: "You have abolsutely no idea where you are...",
     image: "Images/200318140126009-1920x960.jpg",
     options: [new GameOption("Attempt to find a path to school", () => tge.setScene(GameOverLost)),
         new GameOption("???", () => tge.setScene(Backrooms)),
@@ -132,7 +132,7 @@ let GameOverLost = new Scene({
     options: [new GameOption("Start Over", () => Start())]
 });
 let TrainStation = new Scene({
-    text: "You finally found the trainstation! Theres a snack machcine. Would you like to get a snack to celebrate your success ay finding the train-station?",
+    text: "You finally found the train station! Theres a snack machcine. Would you like to get a snack to celebrate your success ay finding the train station?",
     image: "Images/38090305082_90e79fa619_o.0.jpg",
     options: [new GameOption("Buy a snack", () => tge.setScene(GMMissedTrain)),
         new GameOption("Run to the platform", () => tge.setScene(TrainInside))
